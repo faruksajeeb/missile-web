@@ -2,19 +2,80 @@
 <html lang="en">
 
 <head>
-    <title>Missile</title>
+    <title>Raytheon Missiles & Defense</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
+        .bg-dark a {
+            color: white;
+            text-decoration:none;
+        }
+        .caption-2nd {
+            position: absolute;
+            width: 50%;
+            min-width: 300px;
+            max-width: 400px;
+            top: 50%;
+            left: 103px;
+            background: rgba(255,255,255,0.6);
+            transform: translateY(-50%);
+            padding: 25px;
+            border-radius: 7px;
+        }
 
+        .caption-3rd {
+            position: absolute;
+            width: 50%;
+            min-width: 300px;
+            max-width: 400px;
+            top: 50%;
+            right: 103px;
+            background: rgba(255,255,255,0.6);
+            transform: translateY(-50%);
+            padding: 25px;
+            border-radius: 7px;
+        }
+
+        .caption-4th {
+            position: absolute;
+            width: 50%;
+            min-width: 300px;
+            max-width: 400px;
+            top: 50%;
+            left: 103px;
+            background: rgba(255,255,255,0.6);
+            transform: translateY(-50%);
+            padding: 25px;
+            border-radius: 7px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .caption-2nd, .caption-3rd, .caption-4th {
+                position: relative;
+                width: 100%;
+                top:0px;
+                left: 0px;
+                right: 0px;
+                transform: translateY(0%);
+                border-radius: 0px;
+            }
+
+            #featuer-three { margin-bottom: 0px !important; }
+            #featuer-three .container {
+                max-height: none !important;
+            }
+            #featuer-one .py-5, #featuer-two .py-5, #featuer-three .py-5 {
+                padding-bottom: 0px !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section id="header">
-        <div class="container p-3">
+        <div class="container p-3" style="padding-bottom:5px !important;">
             <a class="navbar-brand" href="#">
                 <img src="images/rmd_logo.svg" alt="Avatar Logo" style="width:250px;" class="rounded-pill">
             </a>
@@ -33,41 +94,20 @@
                         <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li> -->
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Who We Are
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="" aria-expanded="false" style="padding-right:15px;">
+                                Who We Are &raquo;
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                What We Do
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Careers
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="" aria-expanded="false" style="padding-right:15px;">
+                                What We Do &raquo;
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News &raquo;</a>
                         </li>
                     </ul>
                     <!-- <form class="d-flex">
@@ -94,49 +134,45 @@
         </div>
     </section>
     <section id="featuer-one">
-        <div class="container py-5">
+        <div class="container py-5" style="position: relative;">
             <img src="images/feature-one.jpg" width="100%" alt="">
+            <div class="caption-2nd">
+                <h2>GhostEye® Family of Radars: LTAMDS</h2>
+                <h3>Improving defense capability against advanced threats.</h3>
+            </div>
         </div>
     </section>
     <section id="featuer-two">
-        <div class="container py-5">
+        <div class="container py-5" style="position: relative; padding-top:0px !important;">
             <img src="images/feature-two.jpg" width="100%" alt="">
+            <div class="caption-3rd">
+                <h2>Counter UAS</h2>
+                <h3>Defending against drones requires a range of systems, including sensors and effectors.</h3>
+            </div>
         </div>
     </section>
-    <section id="featuer-three">
-        <div class="container py-5">
-            <img src="images/feature-three.jpg" width="100%" alt="">
+    <section id="featuer-three" style="margin-bottom: 40px;">
+        <div class="container py-5" style="position: relative; padding-top:0px !important; max-height: 588px; overflow: hidden;">
+            <img src="images/team01.png" width="100%" alt="" style="">
+            <div class="caption-4th">
+                <h2><strong>Meet Our Team</strong></h2>
+                <h3 style="border-bottom: 1px dashed gray; padding-bottom: 15px;">D.C.Das (CEO Bangladesh)</h3>
+                <h4>"He will submit Nuclear Products to be placed in the Raytheon Missiles & Defense."</h4>
+            </div>
         </div>
     </section>
     <section id="big-footer-top">
         <div class="container-fluid bg-danger py-1">
         </div>
     </section>
-    <section id="big-footer" class="bg-dark ">
+    <section id="big-footer" class="bg-dark">
         <div class="container text-white text-center py-5 border-bottom border-1 border-light">
             <div class="row">
                 <div class="col-md-4">
                     <ul class="list-group list-group-flush ">
-                        <li class="list-group-item bg-dark text-white text-start">First item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Second item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Third item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Fourth item</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group list-group-flush ">
-                        <li class="list-group-item bg-dark text-white text-start">First item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Second item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Third item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Fourth item</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group list-group-flush ">
-                        <li class="list-group-item bg-dark text-white text-start">First item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Second item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Third item</li>
-                        <li class="list-group-item bg-dark text-white text-start">Fourth item</li>
+                        <li class="list-group-item bg-dark text-white text-start"><a href="#">Who We Are</a></li>
+                        <li class="list-group-item bg-dark text-white text-start"><a href="#">What We Do</a></li>
+                        <li class="list-group-item bg-dark text-white text-start"><a href="#">News</a></li>
                     </ul>
                 </div>
             </div>
